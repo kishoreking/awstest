@@ -1,6 +1,6 @@
 {
     "dev": {
-        "api_gateway_id": "3vddjm3ftg",
+        "api_gateway_id": "ntt4mxwrxk",
         "aws_region": "ap-south-1",
         "django_settings": "testproj.testproj.settings",
         "profile_name": "default",
