@@ -1,11 +1,16 @@
 {
     "dev": {
-        "api_gateway_id": "ntt4mxwrxk",
         "aws_region": "ap-south-1",
         "django_settings": "testproj.testproj.settings",
         "profile_name": "default",
         "project_name": "awsproj",
-        "runtime": "python3.10",
-        "s3_bucket": "kaushal8368420316"
+        "runtime": "python3.8",
+        "slim_handler": false,
+        "requirements": [
+          {
+            "file": "requirements.txt",
+            "slim": false
+          }
+        ]        
     }
 }

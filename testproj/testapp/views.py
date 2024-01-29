@@ -8,11 +8,16 @@ from rest_framework.response import Response
 class Dropdown1InfoGetApi(APIView):
 
     def get(self,request):
-        pass
-        d=Dropdown1.objects.filter().order_by("id")
-        biS=Dropdown1Serializer001(d,many=True)
-        resultMain=biS.data
-        return Response(resultMain, status=200)
+        # pass
+        # d=Dropdown1.objects.filter().order_by("id")
+        # biS=Dropdown1Serializer001(d,many=True)
+        # resultMain=biS.data
+        rr=    {
+        "id": 1,
+        "name": "Val1",
+        "shortName": "V1"
+        }        
+        return Response([rr], status=200)
     
     def post(self,request):
         pass
@@ -20,11 +25,16 @@ class Dropdown1InfoGetApi(APIView):
 class Dropdown2InfoGetApi(APIView):
 
     def get(self,request):
-        pass
-        d=Dropdown2.objects.filter().order_by("id")
-        biS=Dropdown2Serializer001(d,many=True)
-        resultMain=biS.data
-        return Response(resultMain, status=200)
+        # pass
+        # d=Dropdown2.objects.filter().order_by("id")
+        # biS=Dropdown2Serializer001(d,many=True)
+        # resultMain=biS.data
+        rr=    {
+        "id": 1,
+        "name": "Val1",
+        "shortName": "V1"
+        }        
+        return Response([rr], status=200)
     
     def post(self,request):
         pass
@@ -32,11 +42,16 @@ class Dropdown2InfoGetApi(APIView):
 class Dropdown3InfoGetApi(APIView):
 
     def get(self,request):
-        pass
-        d=Dropdown3.objects.filter().order_by("id")
-        biS=Dropdown3Serializer001(d,many=True)
-        resultMain=biS.data
-        return Response(resultMain, status=200)
+        # pass
+        # d=Dropdown3.objects.filter().order_by("id")
+        # biS=Dropdown3Serializer001(d,many=True)
+        # resultMain=biS.data
+        rr=    {
+        "id": 1,
+        "name": "Val1",
+        "shortName": "V1"
+        }
+        return Response([rr], status=200)
     
     def post(self,request):
         pass    
