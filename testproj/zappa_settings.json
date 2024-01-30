@@ -1,0 +1,11 @@
+{
+    "dev": {
+        "aws_region": "ap-south-1",
+        "django_settings": "testproj.settings",
+        "profile_name": "default",
+        "project_name": "awsproj",
+        "runtime": "python3.10",
+        "s3_bucket": "zappa8368420316"
+
+    }
+}
