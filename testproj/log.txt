@@ -1,0 +1,5 @@
+"GET / HTTP/1.1" 200 6968
+"GET / HTTP/1.1" 200 6968
+File C:\awsproj\testproj\testproj\settings.py previous mtime: 1706699909.9435668, current mtime: 1706704560.7579036
+C:\awsproj\testproj\testproj\settings.py notified as changed. Signal results: [(<function template_changed at 0x000002A0BFDCC8B0>, None), (<function translation_file_changed at 0x000002A0C18B7EB0>, None)].
+C:\awsproj\testproj\testproj\settings.py changed, reloading.
