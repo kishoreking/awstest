@@ -6,23 +6,23 @@ from rest_framework.response import Response
 import datetime
 import boto3
 
-def lambda_handler():
+def lambda_handler(data22):
     
     s3_client = boto3.client('s3')
     
     bucket = "zappa8368420316"
     key = "temp.txt"
-    datainput = "---------aaa--------"
+    datainput = data22
     
-    filepath = "/tmp/" +  key
+    filepath = "/tmp/temp.txt" 
     
     # s3_client.download_file(bucket, key, filepath)
     
-    f = open(filepath, "a")
-    f.write("\n" + datainput)
-    f.close()
+    with open(filepath, "a") as f:
+        f.write("\n" + datainput)
+        f.close()
     
-    s3_client.upload_file(filepath, bucket, key)
+    s3_client.upload_file(filepath, bucket, "temp.txt")
     
     return {
         'statusCode': 200,
@@ -37,14 +37,8 @@ class Dropdown1InfoGetApi(APIView):
         data_to_write = '\n'+str(datetime.datetime.now())+' - Temporary data for Dropdown1InfoGetApi.'
         
 
-        # tmp_file_path = write_to_temp_file(data_to_write)
 
-        bucket_name = 'zappa8368420316'
-        s3_key = 'tmpfile.txt'
-        # upload_to_s3(tmp_file_path, bucket_name, s3_key)
-        # content = read_from_temp_file(tmp_file_path)
-        # print(content)
-        a= lambda_handler()
+        a= lambda_handler(data_to_write)
         rr = {
             "id": 1,
             "name": "Val1",
